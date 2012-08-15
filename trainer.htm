@@ -1,0 +1,1255 @@
+<html>
+<head>
+	<script type="text/javascript" src="lib/jquery/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="lib/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="trainer.js"></script>
+    <link rel="stylesheet" type="text/css" href="trainer.css" />
+</head>
+<body>
+	<div>		
+		<table class="statTable">
+		<tr>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td id="lvl_0_indicator" class="statLevelValueLevelIndicator">0</td>
+			<td id="lvl_1_indicator" class="statLevelValueLevelIndicator">1</td>
+			<td id="lvl_2_indicator" class="statLevelValueLevelIndicator">2</td>
+			<td id="lvl_3_indicator" class="statLevelValueLevelIndicator">3</td>
+			<td id="lvl_4_indicator" class="statLevelValueLevelIndicator">4</td>
+			<td id="lvl_5_indicator" class="statLevelValueLevelIndicator">5</td>
+			<td id="lvl_6_indicator" class="statLevelValueLevelIndicator">6</td>
+			<td id="lvl_7_indicator" class="statLevelValueLevelIndicator">7</td>
+			<td id="lvl_8_indicator" class="statLevelValueLevelIndicator">8</td>
+			<td id="lvl_9_indicator" class="statLevelValueLevelIndicator">9</td>
+			<td id="lvl_10_indicator" class="statLevelValueLevelIndicator">10</td>
+			<td id="lvl_11_indicator" class="statLevelValueLevelIndicator">11</td>
+			<td id="lvl_12_indicator" class="statLevelValueLevelIndicator">12</td>
+			<td id="lvl_13_indicator" class="statLevelValueLevelIndicator">13</td>
+			<td id="lvl_14_indicator" class="statLevelValueLevelIndicator">14</td>
+			<td id="lvl_15_indicator" class="statLevelValueLevelIndicator">15</td>
+			<td id="lvl_16_indicator" class="statLevelValueLevelIndicator">16</td>
+			<td id="lvl_17_indicator" class="statLevelValueLevelIndicator">17</td>
+			<td id="lvl_18_indicator" class="statLevelValueLevelIndicator">18</td>
+			<td id="lvl_19_indicator" class="statLevelValueLevelIndicator">19</td>
+			<td id="lvl_20_indicator" class="statLevelValueLevelIndicator">20</td>
+			<td id="lvl_21_indicator" class="statLevelValueLevelIndicator">21</td>
+			<td id="lvl_22_indicator" class="statLevelValueLevelIndicator">22</td>
+			<td id="lvl_23_indicator" class="statLevelValueLevelIndicator">23</td>
+			<td id="lvl_24_indicator" class="statLevelValueLevelIndicator">24</td>
+			<td id="lvl_25_indicator" class="statLevelValueLevelIndicator">25</td>
+			<td id="lvl_26_indicator" class="statLevelValueLevelIndicator">26</td>
+			<td id="lvl_27_indicator" class="statLevelValueLevelIndicator">27</td>
+			<td id="lvl_28_indicator" class="statLevelValueLevelIndicator">28</td>
+			<td id="lvl_29_indicator" class="statLevelValueLevelIndicator">29</td>
+			<td id="lvl_30_indicator" class="statLevelValueLevelIndicator">30</td>
+			<td id="lvl_31_indicator" class="statLevelValueLevelIndicator">31</td>
+			<td id="lvl_32_indicator" class="statLevelValueLevelIndicator">32</td>
+			<td id="lvl_33_indicator" class="statLevelValueLevelIndicator">33</td>
+			<td id="lvl_34_indicator" class="statLevelValueLevelIndicator">34</td>
+			<td id="lvl_35_indicator" class="statLevelValueLevelIndicator">35</td>
+			<td id="lvl_36_indicator" class="statLevelValueLevelIndicator">36</td>
+			<td id="lvl_37_indicator" class="statLevelValueLevelIndicator">37</td>
+			<td id="lvl_38_indicator" class="statLevelValueLevelIndicator">38</td>
+			<td id="lvl_39_indicator" class="statLevelValueLevelIndicator">39</td>
+			<td id="lvl_40_indicator" class="statLevelValueLevelIndicator">40</td>
+			<td id="lvl_41_indicator" class="statLevelValueLevelIndicator">41</td>
+			<td id="lvl_42_indicator" class="statLevelValueLevelIndicator">42</td>
+			<td id="lvl_43_indicator" class="statLevelValueLevelIndicator">43</td>
+			<td id="lvl_44_indicator" class="statLevelValueLevelIndicator">44</td>
+			<td id="lvl_45_indicator" class="statLevelValueLevelIndicator">45</td>
+			<td id="lvl_46_indicator" class="statLevelValueLevelIndicator">46</td>
+			<td id="lvl_47_indicator" class="statLevelValueLevelIndicator">47</td>
+			<td id="lvl_48_indicator" class="statLevelValueLevelIndicator">48</td>
+			<td id="lvl_49_indicator" class="statLevelValueLevelIndicator">49</td>
+			<td id="lvl_50_indicator" class="statLevelValueLevelIndicator">50</td>
+			<td id="lvl_51_indicator" class="statLevelValueLevelIndicator">51</td>
+			<td id="lvl_52_indicator" class="statLevelValueLevelIndicator">52</td>
+			<td id="lvl_53_indicator" class="statLevelValueLevelIndicator">53</td>
+			<td id="lvl_54_indicator" class="statLevelValueLevelIndicator">54</td>
+			<td id="lvl_55_indicator" class="statLevelValueLevelIndicator">55</td>
+			<td id="lvl_56_indicator" class="statLevelValueLevelIndicator">56</td>
+			<td id="lvl_57_indicator" class="statLevelValueLevelIndicator">57</td>
+			<td id="lvl_58_indicator" class="statLevelValueLevelIndicator">58</td>
+			<td id="lvl_59_indicator" class="statLevelValueLevelIndicator">59</td>
+			<td id="lvl_60_indicator" class="statLevelValueLevelIndicator">60</td>
+			<td id="lvl_61_indicator" class="statLevelValueLevelIndicator">61</td>
+			<td id="lvl_62_indicator" class="statLevelValueLevelIndicator">62</td>
+			<td id="lvl_63_indicator" class="statLevelValueLevelIndicator">63</td>
+			<td id="lvl_64_indicator" class="statLevelValueLevelIndicator">64</td>
+			<td id="lvl_65_indicator" class="statLevelValueLevelIndicator">65</td>
+			<td id="lvl_66_indicator" class="statLevelValueLevelIndicator">66</td>
+			<td id="lvl_67_indicator" class="statLevelValueLevelIndicator">67</td>
+			<td id="lvl_68_indicator" class="statLevelValueLevelIndicator">68</td>
+			<td id="lvl_69_indicator" class="statLevelValueLevelIndicator">69</td>
+			<td id="lvl_70_indicator" class="statLevelValueLevelIndicator">70</td>
+			<td id="lvl_71_indicator" class="statLevelValueLevelIndicator">71</td>
+			<td id="lvl_72_indicator" class="statLevelValueLevelIndicator">72</td>
+			<td id="lvl_73_indicator" class="statLevelValueLevelIndicator">73</td>
+			<td id="lvl_74_indicator" class="statLevelValueLevelIndicator">74</td>
+			<td id="lvl_75_indicator" class="statLevelValueLevelIndicator">75</td>
+			<td id="lvl_76_indicator" class="statLevelValueLevelIndicator">76</td>
+			<td id="lvl_77_indicator" class="statLevelValueLevelIndicator">77</td>
+			<td id="lvl_78_indicator" class="statLevelValueLevelIndicator">78</td>
+			<td id="lvl_79_indicator" class="statLevelValueLevelIndicator">79</td>
+			<td id="lvl_80_indicator" class="statLevelValueLevelIndicator">80</td>
+			<td id="lvl_81_indicator" class="statLevelValueLevelIndicator">81</td>
+			<td id="lvl_82_indicator" class="statLevelValueLevelIndicator">82</td>
+			<td id="lvl_83_indicator" class="statLevelValueLevelIndicator">83</td>
+			<td id="lvl_84_indicator" class="statLevelValueLevelIndicator">84</td>
+			<td id="lvl_85_indicator" class="statLevelValueLevelIndicator">85</td>
+			<td id="lvl_86_indicator" class="statLevelValueLevelIndicator">86</td>
+			<td id="lvl_87_indicator" class="statLevelValueLevelIndicator">87</td>
+			<td id="lvl_88_indicator" class="statLevelValueLevelIndicator">88</td>
+			<td id="lvl_89_indicator" class="statLevelValueLevelIndicator">89</td>
+			<td id="lvl_90_indicator" class="statLevelValueLevelIndicator">90</td>
+			<td id="lvl_91_indicator" class="statLevelValueLevelIndicator">91</td>
+			<td id="lvl_92_indicator" class="statLevelValueLevelIndicator">92</td>
+			<td id="lvl_93_indicator" class="statLevelValueLevelIndicator">93</td>
+			<td id="lvl_94_indicator" class="statLevelValueLevelIndicator">94</td>
+			<td id="lvl_95_indicator" class="statLevelValueLevelIndicator">95</td>
+			<td id="lvl_96_indicator" class="statLevelValueLevelIndicator">96</td>
+			<td id="lvl_97_indicator" class="statLevelValueLevelIndicator">97</td>
+			<td id="lvl_98_indicator" class="statLevelValueLevelIndicator">98</td>
+			<td id="lvl_99_indicator" class="statLevelValueLevelIndicator">99</td>
+			<td id="lvl_100_indicator" class="statLevelValueLevelIndicator">100</td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader physicalStatHeader">
+				STR
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="str_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="str_0" class="statLevelValue"></td>
+			<td id="str_1" class="statLevelValue"></td>
+			<td id="str_2" class="statLevelValue"></td>
+			<td id="str_3" class="statLevelValue"></td>
+			<td id="str_4" class="statLevelValue"></td>
+			<td id="str_5" class="statLevelValue"></td>
+			<td id="str_6" class="statLevelValue"></td>
+			<td id="str_7" class="statLevelValue"></td>
+			<td id="str_8" class="statLevelValue"></td>
+			<td id="str_9" class="statLevelValue"></td>
+			<td id="str_10" class="statLevelValue"></td>
+			<td id="str_11" class="statLevelValue"></td>
+			<td id="str_12" class="statLevelValue"></td>
+			<td id="str_13" class="statLevelValue"></td>
+			<td id="str_14" class="statLevelValue"></td>
+			<td id="str_15" class="statLevelValue"></td>
+			<td id="str_16" class="statLevelValue"></td>
+			<td id="str_17" class="statLevelValue"></td>
+			<td id="str_18" class="statLevelValue"></td>
+			<td id="str_19" class="statLevelValue"></td>
+			<td id="str_20" class="statLevelValue"></td>
+			<td id="str_21" class="statLevelValue"></td>
+			<td id="str_22" class="statLevelValue"></td>
+			<td id="str_23" class="statLevelValue"></td>
+			<td id="str_24" class="statLevelValue"></td>
+			<td id="str_25" class="statLevelValue"></td>
+			<td id="str_26" class="statLevelValue"></td>
+			<td id="str_27" class="statLevelValue"></td>
+			<td id="str_28" class="statLevelValue"></td>
+			<td id="str_29" class="statLevelValue"></td>
+			<td id="str_30" class="statLevelValue"></td>
+			<td id="str_31" class="statLevelValue"></td>
+			<td id="str_32" class="statLevelValue"></td>
+			<td id="str_33" class="statLevelValue"></td>
+			<td id="str_34" class="statLevelValue"></td>
+			<td id="str_35" class="statLevelValue"></td>
+			<td id="str_36" class="statLevelValue"></td>
+			<td id="str_37" class="statLevelValue"></td>
+			<td id="str_38" class="statLevelValue"></td>
+			<td id="str_39" class="statLevelValue"></td>
+			<td id="str_40" class="statLevelValue"></td>
+			<td id="str_41" class="statLevelValue"></td>
+			<td id="str_42" class="statLevelValue"></td>
+			<td id="str_43" class="statLevelValue"></td>
+			<td id="str_44" class="statLevelValue"></td>
+			<td id="str_45" class="statLevelValue"></td>
+			<td id="str_46" class="statLevelValue"></td>
+			<td id="str_47" class="statLevelValue"></td>
+			<td id="str_48" class="statLevelValue"></td>
+			<td id="str_49" class="statLevelValue"></td>
+			<td id="str_50" class="statLevelValue"></td>
+			<td id="str_51" class="statLevelValue"></td>
+			<td id="str_52" class="statLevelValue"></td>
+			<td id="str_53" class="statLevelValue"></td>
+			<td id="str_54" class="statLevelValue"></td>
+			<td id="str_55" class="statLevelValue"></td>
+			<td id="str_56" class="statLevelValue"></td>
+			<td id="str_57" class="statLevelValue"></td>
+			<td id="str_58" class="statLevelValue"></td>
+			<td id="str_59" class="statLevelValue"></td>
+			<td id="str_60" class="statLevelValue"></td>
+			<td id="str_61" class="statLevelValue"></td>
+			<td id="str_62" class="statLevelValue"></td>
+			<td id="str_63" class="statLevelValue"></td>
+			<td id="str_64" class="statLevelValue"></td>
+			<td id="str_65" class="statLevelValue"></td>
+			<td id="str_66" class="statLevelValue"></td>
+			<td id="str_67" class="statLevelValue"></td>
+			<td id="str_68" class="statLevelValue"></td>
+			<td id="str_69" class="statLevelValue"></td>
+			<td id="str_70" class="statLevelValue"></td>
+			<td id="str_71" class="statLevelValue"></td>
+			<td id="str_72" class="statLevelValue"></td>
+			<td id="str_73" class="statLevelValue"></td>
+			<td id="str_74" class="statLevelValue"></td>
+			<td id="str_75" class="statLevelValue"></td>
+			<td id="str_76" class="statLevelValue"></td>
+			<td id="str_77" class="statLevelValue"></td>
+			<td id="str_78" class="statLevelValue"></td>
+			<td id="str_79" class="statLevelValue"></td>
+			<td id="str_80" class="statLevelValue"></td>
+			<td id="str_81" class="statLevelValue"></td>
+			<td id="str_82" class="statLevelValue"></td>
+			<td id="str_83" class="statLevelValue"></td>
+			<td id="str_84" class="statLevelValue"></td>
+			<td id="str_85" class="statLevelValue"></td>
+			<td id="str_86" class="statLevelValue"></td>
+			<td id="str_87" class="statLevelValue"></td>
+			<td id="str_88" class="statLevelValue"></td>
+			<td id="str_89" class="statLevelValue"></td>
+			<td id="str_90" class="statLevelValue"></td>
+			<td id="str_91" class="statLevelValue"></td>
+			<td id="str_92" class="statLevelValue"></td>
+			<td id="str_93" class="statLevelValue"></td>
+			<td id="str_94" class="statLevelValue"></td>
+			<td id="str_95" class="statLevelValue"></td>
+			<td id="str_96" class="statLevelValue"></td>
+			<td id="str_97" class="statLevelValue"></td>
+			<td id="str_98" class="statLevelValue"></td>
+			<td id="str_99" class="statLevelValue"></td>
+			<td id="str_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader physicalStatHeader">
+				CON
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="con_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="con_0" class="statLevelValue"></td>
+			<td id="con_1" class="statLevelValue"></td>
+			<td id="con_2" class="statLevelValue"></td>
+			<td id="con_3" class="statLevelValue"></td>
+			<td id="con_4" class="statLevelValue"></td>
+			<td id="con_5" class="statLevelValue"></td>
+			<td id="con_6" class="statLevelValue"></td>
+			<td id="con_7" class="statLevelValue"></td>
+			<td id="con_8" class="statLevelValue"></td>
+			<td id="con_9" class="statLevelValue"></td>
+			<td id="con_10" class="statLevelValue"></td>
+			<td id="con_11" class="statLevelValue"></td>
+			<td id="con_12" class="statLevelValue"></td>
+			<td id="con_13" class="statLevelValue"></td>
+			<td id="con_14" class="statLevelValue"></td>
+			<td id="con_15" class="statLevelValue"></td>
+			<td id="con_16" class="statLevelValue"></td>
+			<td id="con_17" class="statLevelValue"></td>
+			<td id="con_18" class="statLevelValue"></td>
+			<td id="con_19" class="statLevelValue"></td>
+			<td id="con_20" class="statLevelValue"></td>
+			<td id="con_21" class="statLevelValue"></td>
+			<td id="con_22" class="statLevelValue"></td>
+			<td id="con_23" class="statLevelValue"></td>
+			<td id="con_24" class="statLevelValue"></td>
+			<td id="con_25" class="statLevelValue"></td>
+			<td id="con_26" class="statLevelValue"></td>
+			<td id="con_27" class="statLevelValue"></td>
+			<td id="con_28" class="statLevelValue"></td>
+			<td id="con_29" class="statLevelValue"></td>
+			<td id="con_30" class="statLevelValue"></td>
+			<td id="con_31" class="statLevelValue"></td>
+			<td id="con_32" class="statLevelValue"></td>
+			<td id="con_33" class="statLevelValue"></td>
+			<td id="con_34" class="statLevelValue"></td>
+			<td id="con_35" class="statLevelValue"></td>
+			<td id="con_36" class="statLevelValue"></td>
+			<td id="con_37" class="statLevelValue"></td>
+			<td id="con_38" class="statLevelValue"></td>
+			<td id="con_39" class="statLevelValue"></td>
+			<td id="con_40" class="statLevelValue"></td>
+			<td id="con_41" class="statLevelValue"></td>
+			<td id="con_42" class="statLevelValue"></td>
+			<td id="con_43" class="statLevelValue"></td>
+			<td id="con_44" class="statLevelValue"></td>
+			<td id="con_45" class="statLevelValue"></td>
+			<td id="con_46" class="statLevelValue"></td>
+			<td id="con_47" class="statLevelValue"></td>
+			<td id="con_48" class="statLevelValue"></td>
+			<td id="con_49" class="statLevelValue"></td>
+			<td id="con_50" class="statLevelValue"></td>
+			<td id="con_51" class="statLevelValue"></td>
+			<td id="con_52" class="statLevelValue"></td>
+			<td id="con_53" class="statLevelValue"></td>
+			<td id="con_54" class="statLevelValue"></td>
+			<td id="con_55" class="statLevelValue"></td>
+			<td id="con_56" class="statLevelValue"></td>
+			<td id="con_57" class="statLevelValue"></td>
+			<td id="con_58" class="statLevelValue"></td>
+			<td id="con_59" class="statLevelValue"></td>
+			<td id="con_60" class="statLevelValue"></td>
+			<td id="con_61" class="statLevelValue"></td>
+			<td id="con_62" class="statLevelValue"></td>
+			<td id="con_63" class="statLevelValue"></td>
+			<td id="con_64" class="statLevelValue"></td>
+			<td id="con_65" class="statLevelValue"></td>
+			<td id="con_66" class="statLevelValue"></td>
+			<td id="con_67" class="statLevelValue"></td>
+			<td id="con_68" class="statLevelValue"></td>
+			<td id="con_69" class="statLevelValue"></td>
+			<td id="con_70" class="statLevelValue"></td>
+			<td id="con_71" class="statLevelValue"></td>
+			<td id="con_72" class="statLevelValue"></td>
+			<td id="con_73" class="statLevelValue"></td>
+			<td id="con_74" class="statLevelValue"></td>
+			<td id="con_75" class="statLevelValue"></td>
+			<td id="con_76" class="statLevelValue"></td>
+			<td id="con_77" class="statLevelValue"></td>
+			<td id="con_78" class="statLevelValue"></td>
+			<td id="con_79" class="statLevelValue"></td>
+			<td id="con_80" class="statLevelValue"></td>
+			<td id="con_81" class="statLevelValue"></td>
+			<td id="con_82" class="statLevelValue"></td>
+			<td id="con_83" class="statLevelValue"></td>
+			<td id="con_84" class="statLevelValue"></td>
+			<td id="con_85" class="statLevelValue"></td>
+			<td id="con_86" class="statLevelValue"></td>
+			<td id="con_87" class="statLevelValue"></td>
+			<td id="con_88" class="statLevelValue"></td>
+			<td id="con_89" class="statLevelValue"></td>
+			<td id="con_90" class="statLevelValue"></td>
+			<td id="con_91" class="statLevelValue"></td>
+			<td id="con_92" class="statLevelValue"></td>
+			<td id="con_93" class="statLevelValue"></td>
+			<td id="con_94" class="statLevelValue"></td>
+			<td id="con_95" class="statLevelValue"></td>
+			<td id="con_96" class="statLevelValue"></td>
+			<td id="con_97" class="statLevelValue"></td>
+			<td id="con_98" class="statLevelValue"></td>
+			<td id="con_99" class="statLevelValue"></td>
+			<td id="con_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader physicalStatHeader">
+				DEX
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="dex_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="dex_0" class="statLevelValue"></td>
+			<td id="dex_1" class="statLevelValue"></td>
+			<td id="dex_2" class="statLevelValue"></td>
+			<td id="dex_3" class="statLevelValue"></td>
+			<td id="dex_4" class="statLevelValue"></td>
+			<td id="dex_5" class="statLevelValue"></td>
+			<td id="dex_6" class="statLevelValue"></td>
+			<td id="dex_7" class="statLevelValue"></td>
+			<td id="dex_8" class="statLevelValue"></td>
+			<td id="dex_9" class="statLevelValue"></td>
+			<td id="dex_10" class="statLevelValue"></td>
+			<td id="dex_11" class="statLevelValue"></td>
+			<td id="dex_12" class="statLevelValue"></td>
+			<td id="dex_13" class="statLevelValue"></td>
+			<td id="dex_14" class="statLevelValue"></td>
+			<td id="dex_15" class="statLevelValue"></td>
+			<td id="dex_16" class="statLevelValue"></td>
+			<td id="dex_17" class="statLevelValue"></td>
+			<td id="dex_18" class="statLevelValue"></td>
+			<td id="dex_19" class="statLevelValue"></td>
+			<td id="dex_20" class="statLevelValue"></td>
+			<td id="dex_21" class="statLevelValue"></td>
+			<td id="dex_22" class="statLevelValue"></td>
+			<td id="dex_23" class="statLevelValue"></td>
+			<td id="dex_24" class="statLevelValue"></td>
+			<td id="dex_25" class="statLevelValue"></td>
+			<td id="dex_26" class="statLevelValue"></td>
+			<td id="dex_27" class="statLevelValue"></td>
+			<td id="dex_28" class="statLevelValue"></td>
+			<td id="dex_29" class="statLevelValue"></td>
+			<td id="dex_30" class="statLevelValue"></td>
+			<td id="dex_31" class="statLevelValue"></td>
+			<td id="dex_32" class="statLevelValue"></td>
+			<td id="dex_33" class="statLevelValue"></td>
+			<td id="dex_34" class="statLevelValue"></td>
+			<td id="dex_35" class="statLevelValue"></td>
+			<td id="dex_36" class="statLevelValue"></td>
+			<td id="dex_37" class="statLevelValue"></td>
+			<td id="dex_38" class="statLevelValue"></td>
+			<td id="dex_39" class="statLevelValue"></td>
+			<td id="dex_40" class="statLevelValue"></td>
+			<td id="dex_41" class="statLevelValue"></td>
+			<td id="dex_42" class="statLevelValue"></td>
+			<td id="dex_43" class="statLevelValue"></td>
+			<td id="dex_44" class="statLevelValue"></td>
+			<td id="dex_45" class="statLevelValue"></td>
+			<td id="dex_46" class="statLevelValue"></td>
+			<td id="dex_47" class="statLevelValue"></td>
+			<td id="dex_48" class="statLevelValue"></td>
+			<td id="dex_49" class="statLevelValue"></td>
+			<td id="dex_50" class="statLevelValue"></td>
+			<td id="dex_51" class="statLevelValue"></td>
+			<td id="dex_52" class="statLevelValue"></td>
+			<td id="dex_53" class="statLevelValue"></td>
+			<td id="dex_54" class="statLevelValue"></td>
+			<td id="dex_55" class="statLevelValue"></td>
+			<td id="dex_56" class="statLevelValue"></td>
+			<td id="dex_57" class="statLevelValue"></td>
+			<td id="dex_58" class="statLevelValue"></td>
+			<td id="dex_59" class="statLevelValue"></td>
+			<td id="dex_60" class="statLevelValue"></td>
+			<td id="dex_61" class="statLevelValue"></td>
+			<td id="dex_62" class="statLevelValue"></td>
+			<td id="dex_63" class="statLevelValue"></td>
+			<td id="dex_64" class="statLevelValue"></td>
+			<td id="dex_65" class="statLevelValue"></td>
+			<td id="dex_66" class="statLevelValue"></td>
+			<td id="dex_67" class="statLevelValue"></td>
+			<td id="dex_68" class="statLevelValue"></td>
+			<td id="dex_69" class="statLevelValue"></td>
+			<td id="dex_70" class="statLevelValue"></td>
+			<td id="dex_71" class="statLevelValue"></td>
+			<td id="dex_72" class="statLevelValue"></td>
+			<td id="dex_73" class="statLevelValue"></td>
+			<td id="dex_74" class="statLevelValue"></td>
+			<td id="dex_75" class="statLevelValue"></td>
+			<td id="dex_76" class="statLevelValue"></td>
+			<td id="dex_77" class="statLevelValue"></td>
+			<td id="dex_78" class="statLevelValue"></td>
+			<td id="dex_79" class="statLevelValue"></td>
+			<td id="dex_80" class="statLevelValue"></td>
+			<td id="dex_81" class="statLevelValue"></td>
+			<td id="dex_82" class="statLevelValue"></td>
+			<td id="dex_83" class="statLevelValue"></td>
+			<td id="dex_84" class="statLevelValue"></td>
+			<td id="dex_85" class="statLevelValue"></td>
+			<td id="dex_86" class="statLevelValue"></td>
+			<td id="dex_87" class="statLevelValue"></td>
+			<td id="dex_88" class="statLevelValue"></td>
+			<td id="dex_89" class="statLevelValue"></td>
+			<td id="dex_90" class="statLevelValue"></td>
+			<td id="dex_91" class="statLevelValue"></td>
+			<td id="dex_92" class="statLevelValue"></td>
+			<td id="dex_93" class="statLevelValue"></td>
+			<td id="dex_94" class="statLevelValue"></td>
+			<td id="dex_95" class="statLevelValue"></td>
+			<td id="dex_96" class="statLevelValue"></td>
+			<td id="dex_97" class="statLevelValue"></td>
+			<td id="dex_98" class="statLevelValue"></td>
+			<td id="dex_99" class="statLevelValue"></td>
+			<td id="dex_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader physicalStatHeader">
+				AGL
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="agl_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="agl_0" class="statLevelValue"></td>
+			<td id="agl_1" class="statLevelValue"></td>
+			<td id="agl_2" class="statLevelValue"></td>
+			<td id="agl_3" class="statLevelValue"></td>
+			<td id="agl_4" class="statLevelValue"></td>
+			<td id="agl_5" class="statLevelValue"></td>
+			<td id="agl_6" class="statLevelValue"></td>
+			<td id="agl_7" class="statLevelValue"></td>
+			<td id="agl_8" class="statLevelValue"></td>
+			<td id="agl_9" class="statLevelValue"></td>
+			<td id="agl_10" class="statLevelValue"></td>
+			<td id="agl_11" class="statLevelValue"></td>
+			<td id="agl_12" class="statLevelValue"></td>
+			<td id="agl_13" class="statLevelValue"></td>
+			<td id="agl_14" class="statLevelValue"></td>
+			<td id="agl_15" class="statLevelValue"></td>
+			<td id="agl_16" class="statLevelValue"></td>
+			<td id="agl_17" class="statLevelValue"></td>
+			<td id="agl_18" class="statLevelValue"></td>
+			<td id="agl_19" class="statLevelValue"></td>
+			<td id="agl_20" class="statLevelValue"></td>
+			<td id="agl_21" class="statLevelValue"></td>
+			<td id="agl_22" class="statLevelValue"></td>
+			<td id="agl_23" class="statLevelValue"></td>
+			<td id="agl_24" class="statLevelValue"></td>
+			<td id="agl_25" class="statLevelValue"></td>
+			<td id="agl_26" class="statLevelValue"></td>
+			<td id="agl_27" class="statLevelValue"></td>
+			<td id="agl_28" class="statLevelValue"></td>
+			<td id="agl_29" class="statLevelValue"></td>
+			<td id="agl_30" class="statLevelValue"></td>
+			<td id="agl_31" class="statLevelValue"></td>
+			<td id="agl_32" class="statLevelValue"></td>
+			<td id="agl_33" class="statLevelValue"></td>
+			<td id="agl_34" class="statLevelValue"></td>
+			<td id="agl_35" class="statLevelValue"></td>
+			<td id="agl_36" class="statLevelValue"></td>
+			<td id="agl_37" class="statLevelValue"></td>
+			<td id="agl_38" class="statLevelValue"></td>
+			<td id="agl_39" class="statLevelValue"></td>
+			<td id="agl_40" class="statLevelValue"></td>
+			<td id="agl_41" class="statLevelValue"></td>
+			<td id="agl_42" class="statLevelValue"></td>
+			<td id="agl_43" class="statLevelValue"></td>
+			<td id="agl_44" class="statLevelValue"></td>
+			<td id="agl_45" class="statLevelValue"></td>
+			<td id="agl_46" class="statLevelValue"></td>
+			<td id="agl_47" class="statLevelValue"></td>
+			<td id="agl_48" class="statLevelValue"></td>
+			<td id="agl_49" class="statLevelValue"></td>
+			<td id="agl_50" class="statLevelValue"></td>
+			<td id="agl_51" class="statLevelValue"></td>
+			<td id="agl_52" class="statLevelValue"></td>
+			<td id="agl_53" class="statLevelValue"></td>
+			<td id="agl_54" class="statLevelValue"></td>
+			<td id="agl_55" class="statLevelValue"></td>
+			<td id="agl_56" class="statLevelValue"></td>
+			<td id="agl_57" class="statLevelValue"></td>
+			<td id="agl_58" class="statLevelValue"></td>
+			<td id="agl_59" class="statLevelValue"></td>
+			<td id="agl_60" class="statLevelValue"></td>
+			<td id="agl_61" class="statLevelValue"></td>
+			<td id="agl_62" class="statLevelValue"></td>
+			<td id="agl_63" class="statLevelValue"></td>
+			<td id="agl_64" class="statLevelValue"></td>
+			<td id="agl_65" class="statLevelValue"></td>
+			<td id="agl_66" class="statLevelValue"></td>
+			<td id="agl_67" class="statLevelValue"></td>
+			<td id="agl_68" class="statLevelValue"></td>
+			<td id="agl_69" class="statLevelValue"></td>
+			<td id="agl_70" class="statLevelValue"></td>
+			<td id="agl_71" class="statLevelValue"></td>
+			<td id="agl_72" class="statLevelValue"></td>
+			<td id="agl_73" class="statLevelValue"></td>
+			<td id="agl_74" class="statLevelValue"></td>
+			<td id="agl_75" class="statLevelValue"></td>
+			<td id="agl_76" class="statLevelValue"></td>
+			<td id="agl_77" class="statLevelValue"></td>
+			<td id="agl_78" class="statLevelValue"></td>
+			<td id="agl_79" class="statLevelValue"></td>
+			<td id="agl_80" class="statLevelValue"></td>
+			<td id="agl_81" class="statLevelValue"></td>
+			<td id="agl_82" class="statLevelValue"></td>
+			<td id="agl_83" class="statLevelValue"></td>
+			<td id="agl_84" class="statLevelValue"></td>
+			<td id="agl_85" class="statLevelValue"></td>
+			<td id="agl_86" class="statLevelValue"></td>
+			<td id="agl_87" class="statLevelValue"></td>
+			<td id="agl_88" class="statLevelValue"></td>
+			<td id="agl_89" class="statLevelValue"></td>
+			<td id="agl_90" class="statLevelValue"></td>
+			<td id="agl_91" class="statLevelValue"></td>
+			<td id="agl_92" class="statLevelValue"></td>
+			<td id="agl_93" class="statLevelValue"></td>
+			<td id="agl_94" class="statLevelValue"></td>
+			<td id="agl_95" class="statLevelValue"></td>
+			<td id="agl_96" class="statLevelValue"></td>
+			<td id="agl_97" class="statLevelValue"></td>
+			<td id="agl_98" class="statLevelValue"></td>
+			<td id="agl_99" class="statLevelValue"></td>
+			<td id="agl_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader dualStatHeader">
+				DIS
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="dis_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="dis_0" class="statLevelValue"></td>
+			<td id="dis_1" class="statLevelValue"></td>
+			<td id="dis_2" class="statLevelValue"></td>
+			<td id="dis_3" class="statLevelValue"></td>
+			<td id="dis_4" class="statLevelValue"></td>
+			<td id="dis_5" class="statLevelValue"></td>
+			<td id="dis_6" class="statLevelValue"></td>
+			<td id="dis_7" class="statLevelValue"></td>
+			<td id="dis_8" class="statLevelValue"></td>
+			<td id="dis_9" class="statLevelValue"></td>
+			<td id="dis_10" class="statLevelValue"></td>
+			<td id="dis_11" class="statLevelValue"></td>
+			<td id="dis_12" class="statLevelValue"></td>
+			<td id="dis_13" class="statLevelValue"></td>
+			<td id="dis_14" class="statLevelValue"></td>
+			<td id="dis_15" class="statLevelValue"></td>
+			<td id="dis_16" class="statLevelValue"></td>
+			<td id="dis_17" class="statLevelValue"></td>
+			<td id="dis_18" class="statLevelValue"></td>
+			<td id="dis_19" class="statLevelValue"></td>
+			<td id="dis_20" class="statLevelValue"></td>
+			<td id="dis_21" class="statLevelValue"></td>
+			<td id="dis_22" class="statLevelValue"></td>
+			<td id="dis_23" class="statLevelValue"></td>
+			<td id="dis_24" class="statLevelValue"></td>
+			<td id="dis_25" class="statLevelValue"></td>
+			<td id="dis_26" class="statLevelValue"></td>
+			<td id="dis_27" class="statLevelValue"></td>
+			<td id="dis_28" class="statLevelValue"></td>
+			<td id="dis_29" class="statLevelValue"></td>
+			<td id="dis_30" class="statLevelValue"></td>
+			<td id="dis_31" class="statLevelValue"></td>
+			<td id="dis_32" class="statLevelValue"></td>
+			<td id="dis_33" class="statLevelValue"></td>
+			<td id="dis_34" class="statLevelValue"></td>
+			<td id="dis_35" class="statLevelValue"></td>
+			<td id="dis_36" class="statLevelValue"></td>
+			<td id="dis_37" class="statLevelValue"></td>
+			<td id="dis_38" class="statLevelValue"></td>
+			<td id="dis_39" class="statLevelValue"></td>
+			<td id="dis_40" class="statLevelValue"></td>
+			<td id="dis_41" class="statLevelValue"></td>
+			<td id="dis_42" class="statLevelValue"></td>
+			<td id="dis_43" class="statLevelValue"></td>
+			<td id="dis_44" class="statLevelValue"></td>
+			<td id="dis_45" class="statLevelValue"></td>
+			<td id="dis_46" class="statLevelValue"></td>
+			<td id="dis_47" class="statLevelValue"></td>
+			<td id="dis_48" class="statLevelValue"></td>
+			<td id="dis_49" class="statLevelValue"></td>
+			<td id="dis_50" class="statLevelValue"></td>
+			<td id="dis_51" class="statLevelValue"></td>
+			<td id="dis_52" class="statLevelValue"></td>
+			<td id="dis_53" class="statLevelValue"></td>
+			<td id="dis_54" class="statLevelValue"></td>
+			<td id="dis_55" class="statLevelValue"></td>
+			<td id="dis_56" class="statLevelValue"></td>
+			<td id="dis_57" class="statLevelValue"></td>
+			<td id="dis_58" class="statLevelValue"></td>
+			<td id="dis_59" class="statLevelValue"></td>
+			<td id="dis_60" class="statLevelValue"></td>
+			<td id="dis_61" class="statLevelValue"></td>
+			<td id="dis_62" class="statLevelValue"></td>
+			<td id="dis_63" class="statLevelValue"></td>
+			<td id="dis_64" class="statLevelValue"></td>
+			<td id="dis_65" class="statLevelValue"></td>
+			<td id="dis_66" class="statLevelValue"></td>
+			<td id="dis_67" class="statLevelValue"></td>
+			<td id="dis_68" class="statLevelValue"></td>
+			<td id="dis_69" class="statLevelValue"></td>
+			<td id="dis_70" class="statLevelValue"></td>
+			<td id="dis_71" class="statLevelValue"></td>
+			<td id="dis_72" class="statLevelValue"></td>
+			<td id="dis_73" class="statLevelValue"></td>
+			<td id="dis_74" class="statLevelValue"></td>
+			<td id="dis_75" class="statLevelValue"></td>
+			<td id="dis_76" class="statLevelValue"></td>
+			<td id="dis_77" class="statLevelValue"></td>
+			<td id="dis_78" class="statLevelValue"></td>
+			<td id="dis_79" class="statLevelValue"></td>
+			<td id="dis_80" class="statLevelValue"></td>
+			<td id="dis_81" class="statLevelValue"></td>
+			<td id="dis_82" class="statLevelValue"></td>
+			<td id="dis_83" class="statLevelValue"></td>
+			<td id="dis_84" class="statLevelValue"></td>
+			<td id="dis_85" class="statLevelValue"></td>
+			<td id="dis_86" class="statLevelValue"></td>
+			<td id="dis_87" class="statLevelValue"></td>
+			<td id="dis_88" class="statLevelValue"></td>
+			<td id="dis_89" class="statLevelValue"></td>
+			<td id="dis_90" class="statLevelValue"></td>
+			<td id="dis_91" class="statLevelValue"></td>
+			<td id="dis_92" class="statLevelValue"></td>
+			<td id="dis_93" class="statLevelValue"></td>
+			<td id="dis_94" class="statLevelValue"></td>
+			<td id="dis_95" class="statLevelValue"></td>
+			<td id="dis_96" class="statLevelValue"></td>
+			<td id="dis_97" class="statLevelValue"></td>
+			<td id="dis_98" class="statLevelValue"></td>
+			<td id="dis_99" class="statLevelValue"></td>
+			<td id="dis_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader dualStatHeader">
+				AUR
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="aur_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="aur_0" class="statLevelValue"></td>
+			<td id="aur_1" class="statLevelValue"></td>
+			<td id="aur_2" class="statLevelValue"></td>
+			<td id="aur_3" class="statLevelValue"></td>
+			<td id="aur_4" class="statLevelValue"></td>
+			<td id="aur_5" class="statLevelValue"></td>
+			<td id="aur_6" class="statLevelValue"></td>
+			<td id="aur_7" class="statLevelValue"></td>
+			<td id="aur_8" class="statLevelValue"></td>
+			<td id="aur_9" class="statLevelValue"></td>
+			<td id="aur_10" class="statLevelValue"></td>
+			<td id="aur_11" class="statLevelValue"></td>
+			<td id="aur_12" class="statLevelValue"></td>
+			<td id="aur_13" class="statLevelValue"></td>
+			<td id="aur_14" class="statLevelValue"></td>
+			<td id="aur_15" class="statLevelValue"></td>
+			<td id="aur_16" class="statLevelValue"></td>
+			<td id="aur_17" class="statLevelValue"></td>
+			<td id="aur_18" class="statLevelValue"></td>
+			<td id="aur_19" class="statLevelValue"></td>
+			<td id="aur_20" class="statLevelValue"></td>
+			<td id="aur_21" class="statLevelValue"></td>
+			<td id="aur_22" class="statLevelValue"></td>
+			<td id="aur_23" class="statLevelValue"></td>
+			<td id="aur_24" class="statLevelValue"></td>
+			<td id="aur_25" class="statLevelValue"></td>
+			<td id="aur_26" class="statLevelValue"></td>
+			<td id="aur_27" class="statLevelValue"></td>
+			<td id="aur_28" class="statLevelValue"></td>
+			<td id="aur_29" class="statLevelValue"></td>
+			<td id="aur_30" class="statLevelValue"></td>
+			<td id="aur_31" class="statLevelValue"></td>
+			<td id="aur_32" class="statLevelValue"></td>
+			<td id="aur_33" class="statLevelValue"></td>
+			<td id="aur_34" class="statLevelValue"></td>
+			<td id="aur_35" class="statLevelValue"></td>
+			<td id="aur_36" class="statLevelValue"></td>
+			<td id="aur_37" class="statLevelValue"></td>
+			<td id="aur_38" class="statLevelValue"></td>
+			<td id="aur_39" class="statLevelValue"></td>
+			<td id="aur_40" class="statLevelValue"></td>
+			<td id="aur_41" class="statLevelValue"></td>
+			<td id="aur_42" class="statLevelValue"></td>
+			<td id="aur_43" class="statLevelValue"></td>
+			<td id="aur_44" class="statLevelValue"></td>
+			<td id="aur_45" class="statLevelValue"></td>
+			<td id="aur_46" class="statLevelValue"></td>
+			<td id="aur_47" class="statLevelValue"></td>
+			<td id="aur_48" class="statLevelValue"></td>
+			<td id="aur_49" class="statLevelValue"></td>
+			<td id="aur_50" class="statLevelValue"></td>
+			<td id="aur_51" class="statLevelValue"></td>
+			<td id="aur_52" class="statLevelValue"></td>
+			<td id="aur_53" class="statLevelValue"></td>
+			<td id="aur_54" class="statLevelValue"></td>
+			<td id="aur_55" class="statLevelValue"></td>
+			<td id="aur_56" class="statLevelValue"></td>
+			<td id="aur_57" class="statLevelValue"></td>
+			<td id="aur_58" class="statLevelValue"></td>
+			<td id="aur_59" class="statLevelValue"></td>
+			<td id="aur_60" class="statLevelValue"></td>
+			<td id="aur_61" class="statLevelValue"></td>
+			<td id="aur_62" class="statLevelValue"></td>
+			<td id="aur_63" class="statLevelValue"></td>
+			<td id="aur_64" class="statLevelValue"></td>
+			<td id="aur_65" class="statLevelValue"></td>
+			<td id="aur_66" class="statLevelValue"></td>
+			<td id="aur_67" class="statLevelValue"></td>
+			<td id="aur_68" class="statLevelValue"></td>
+			<td id="aur_69" class="statLevelValue"></td>
+			<td id="aur_70" class="statLevelValue"></td>
+			<td id="aur_71" class="statLevelValue"></td>
+			<td id="aur_72" class="statLevelValue"></td>
+			<td id="aur_73" class="statLevelValue"></td>
+			<td id="aur_74" class="statLevelValue"></td>
+			<td id="aur_75" class="statLevelValue"></td>
+			<td id="aur_76" class="statLevelValue"></td>
+			<td id="aur_77" class="statLevelValue"></td>
+			<td id="aur_78" class="statLevelValue"></td>
+			<td id="aur_79" class="statLevelValue"></td>
+			<td id="aur_80" class="statLevelValue"></td>
+			<td id="aur_81" class="statLevelValue"></td>
+			<td id="aur_82" class="statLevelValue"></td>
+			<td id="aur_83" class="statLevelValue"></td>
+			<td id="aur_84" class="statLevelValue"></td>
+			<td id="aur_85" class="statLevelValue"></td>
+			<td id="aur_86" class="statLevelValue"></td>
+			<td id="aur_87" class="statLevelValue"></td>
+			<td id="aur_88" class="statLevelValue"></td>
+			<td id="aur_89" class="statLevelValue"></td>
+			<td id="aur_90" class="statLevelValue"></td>
+			<td id="aur_91" class="statLevelValue"></td>
+			<td id="aur_92" class="statLevelValue"></td>
+			<td id="aur_93" class="statLevelValue"></td>
+			<td id="aur_94" class="statLevelValue"></td>
+			<td id="aur_95" class="statLevelValue"></td>
+			<td id="aur_96" class="statLevelValue"></td>
+			<td id="aur_97" class="statLevelValue"></td>
+			<td id="aur_98" class="statLevelValue"></td>
+			<td id="aur_99" class="statLevelValue"></td>
+			<td id="aur_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader mentalStatHeader">
+				LOG
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="log_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="log_0" class="statLevelValue"></td>
+			<td id="log_1" class="statLevelValue"></td>
+			<td id="log_2" class="statLevelValue"></td>
+			<td id="log_3" class="statLevelValue"></td>
+			<td id="log_4" class="statLevelValue"></td>
+			<td id="log_5" class="statLevelValue"></td>
+			<td id="log_6" class="statLevelValue"></td>
+			<td id="log_7" class="statLevelValue"></td>
+			<td id="log_8" class="statLevelValue"></td>
+			<td id="log_9" class="statLevelValue"></td>
+			<td id="log_10" class="statLevelValue"></td>
+			<td id="log_11" class="statLevelValue"></td>
+			<td id="log_12" class="statLevelValue"></td>
+			<td id="log_13" class="statLevelValue"></td>
+			<td id="log_14" class="statLevelValue"></td>
+			<td id="log_15" class="statLevelValue"></td>
+			<td id="log_16" class="statLevelValue"></td>
+			<td id="log_17" class="statLevelValue"></td>
+			<td id="log_18" class="statLevelValue"></td>
+			<td id="log_19" class="statLevelValue"></td>
+			<td id="log_20" class="statLevelValue"></td>
+			<td id="log_21" class="statLevelValue"></td>
+			<td id="log_22" class="statLevelValue"></td>
+			<td id="log_23" class="statLevelValue"></td>
+			<td id="log_24" class="statLevelValue"></td>
+			<td id="log_25" class="statLevelValue"></td>
+			<td id="log_26" class="statLevelValue"></td>
+			<td id="log_27" class="statLevelValue"></td>
+			<td id="log_28" class="statLevelValue"></td>
+			<td id="log_29" class="statLevelValue"></td>
+			<td id="log_30" class="statLevelValue"></td>
+			<td id="log_31" class="statLevelValue"></td>
+			<td id="log_32" class="statLevelValue"></td>
+			<td id="log_33" class="statLevelValue"></td>
+			<td id="log_34" class="statLevelValue"></td>
+			<td id="log_35" class="statLevelValue"></td>
+			<td id="log_36" class="statLevelValue"></td>
+			<td id="log_37" class="statLevelValue"></td>
+			<td id="log_38" class="statLevelValue"></td>
+			<td id="log_39" class="statLevelValue"></td>
+			<td id="log_40" class="statLevelValue"></td>
+			<td id="log_41" class="statLevelValue"></td>
+			<td id="log_42" class="statLevelValue"></td>
+			<td id="log_43" class="statLevelValue"></td>
+			<td id="log_44" class="statLevelValue"></td>
+			<td id="log_45" class="statLevelValue"></td>
+			<td id="log_46" class="statLevelValue"></td>
+			<td id="log_47" class="statLevelValue"></td>
+			<td id="log_48" class="statLevelValue"></td>
+			<td id="log_49" class="statLevelValue"></td>
+			<td id="log_50" class="statLevelValue"></td>
+			<td id="log_51" class="statLevelValue"></td>
+			<td id="log_52" class="statLevelValue"></td>
+			<td id="log_53" class="statLevelValue"></td>
+			<td id="log_54" class="statLevelValue"></td>
+			<td id="log_55" class="statLevelValue"></td>
+			<td id="log_56" class="statLevelValue"></td>
+			<td id="log_57" class="statLevelValue"></td>
+			<td id="log_58" class="statLevelValue"></td>
+			<td id="log_59" class="statLevelValue"></td>
+			<td id="log_60" class="statLevelValue"></td>
+			<td id="log_61" class="statLevelValue"></td>
+			<td id="log_62" class="statLevelValue"></td>
+			<td id="log_63" class="statLevelValue"></td>
+			<td id="log_64" class="statLevelValue"></td>
+			<td id="log_65" class="statLevelValue"></td>
+			<td id="log_66" class="statLevelValue"></td>
+			<td id="log_67" class="statLevelValue"></td>
+			<td id="log_68" class="statLevelValue"></td>
+			<td id="log_69" class="statLevelValue"></td>
+			<td id="log_70" class="statLevelValue"></td>
+			<td id="log_71" class="statLevelValue"></td>
+			<td id="log_72" class="statLevelValue"></td>
+			<td id="log_73" class="statLevelValue"></td>
+			<td id="log_74" class="statLevelValue"></td>
+			<td id="log_75" class="statLevelValue"></td>
+			<td id="log_76" class="statLevelValue"></td>
+			<td id="log_77" class="statLevelValue"></td>
+			<td id="log_78" class="statLevelValue"></td>
+			<td id="log_79" class="statLevelValue"></td>
+			<td id="log_80" class="statLevelValue"></td>
+			<td id="log_81" class="statLevelValue"></td>
+			<td id="log_82" class="statLevelValue"></td>
+			<td id="log_83" class="statLevelValue"></td>
+			<td id="log_84" class="statLevelValue"></td>
+			<td id="log_85" class="statLevelValue"></td>
+			<td id="log_86" class="statLevelValue"></td>
+			<td id="log_87" class="statLevelValue"></td>
+			<td id="log_88" class="statLevelValue"></td>
+			<td id="log_89" class="statLevelValue"></td>
+			<td id="log_90" class="statLevelValue"></td>
+			<td id="log_91" class="statLevelValue"></td>
+			<td id="log_92" class="statLevelValue"></td>
+			<td id="log_93" class="statLevelValue"></td>
+			<td id="log_94" class="statLevelValue"></td>
+			<td id="log_95" class="statLevelValue"></td>
+			<td id="log_96" class="statLevelValue"></td>
+			<td id="log_97" class="statLevelValue"></td>
+			<td id="log_98" class="statLevelValue"></td>
+			<td id="log_99" class="statLevelValue"></td>
+			<td id="log_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader mentalStatHeader">
+				INT
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="int_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="int_0" class="statLevelValue"></td>
+			<td id="int_1" class="statLevelValue"></td>
+			<td id="int_2" class="statLevelValue"></td>
+			<td id="int_3" class="statLevelValue"></td>
+			<td id="int_4" class="statLevelValue"></td>
+			<td id="int_5" class="statLevelValue"></td>
+			<td id="int_6" class="statLevelValue"></td>
+			<td id="int_7" class="statLevelValue"></td>
+			<td id="int_8" class="statLevelValue"></td>
+			<td id="int_9" class="statLevelValue"></td>
+			<td id="int_10" class="statLevelValue"></td>
+			<td id="int_11" class="statLevelValue"></td>
+			<td id="int_12" class="statLevelValue"></td>
+			<td id="int_13" class="statLevelValue"></td>
+			<td id="int_14" class="statLevelValue"></td>
+			<td id="int_15" class="statLevelValue"></td>
+			<td id="int_16" class="statLevelValue"></td>
+			<td id="int_17" class="statLevelValue"></td>
+			<td id="int_18" class="statLevelValue"></td>
+			<td id="int_19" class="statLevelValue"></td>
+			<td id="int_20" class="statLevelValue"></td>
+			<td id="int_21" class="statLevelValue"></td>
+			<td id="int_22" class="statLevelValue"></td>
+			<td id="int_23" class="statLevelValue"></td>
+			<td id="int_24" class="statLevelValue"></td>
+			<td id="int_25" class="statLevelValue"></td>
+			<td id="int_26" class="statLevelValue"></td>
+			<td id="int_27" class="statLevelValue"></td>
+			<td id="int_28" class="statLevelValue"></td>
+			<td id="int_29" class="statLevelValue"></td>
+			<td id="int_30" class="statLevelValue"></td>
+			<td id="int_31" class="statLevelValue"></td>
+			<td id="int_32" class="statLevelValue"></td>
+			<td id="int_33" class="statLevelValue"></td>
+			<td id="int_34" class="statLevelValue"></td>
+			<td id="int_35" class="statLevelValue"></td>
+			<td id="int_36" class="statLevelValue"></td>
+			<td id="int_37" class="statLevelValue"></td>
+			<td id="int_38" class="statLevelValue"></td>
+			<td id="int_39" class="statLevelValue"></td>
+			<td id="int_40" class="statLevelValue"></td>
+			<td id="int_41" class="statLevelValue"></td>
+			<td id="int_42" class="statLevelValue"></td>
+			<td id="int_43" class="statLevelValue"></td>
+			<td id="int_44" class="statLevelValue"></td>
+			<td id="int_45" class="statLevelValue"></td>
+			<td id="int_46" class="statLevelValue"></td>
+			<td id="int_47" class="statLevelValue"></td>
+			<td id="int_48" class="statLevelValue"></td>
+			<td id="int_49" class="statLevelValue"></td>
+			<td id="int_50" class="statLevelValue"></td>
+			<td id="int_51" class="statLevelValue"></td>
+			<td id="int_52" class="statLevelValue"></td>
+			<td id="int_53" class="statLevelValue"></td>
+			<td id="int_54" class="statLevelValue"></td>
+			<td id="int_55" class="statLevelValue"></td>
+			<td id="int_56" class="statLevelValue"></td>
+			<td id="int_57" class="statLevelValue"></td>
+			<td id="int_58" class="statLevelValue"></td>
+			<td id="int_59" class="statLevelValue"></td>
+			<td id="int_60" class="statLevelValue"></td>
+			<td id="int_61" class="statLevelValue"></td>
+			<td id="int_62" class="statLevelValue"></td>
+			<td id="int_63" class="statLevelValue"></td>
+			<td id="int_64" class="statLevelValue"></td>
+			<td id="int_65" class="statLevelValue"></td>
+			<td id="int_66" class="statLevelValue"></td>
+			<td id="int_67" class="statLevelValue"></td>
+			<td id="int_68" class="statLevelValue"></td>
+			<td id="int_69" class="statLevelValue"></td>
+			<td id="int_70" class="statLevelValue"></td>
+			<td id="int_71" class="statLevelValue"></td>
+			<td id="int_72" class="statLevelValue"></td>
+			<td id="int_73" class="statLevelValue"></td>
+			<td id="int_74" class="statLevelValue"></td>
+			<td id="int_75" class="statLevelValue"></td>
+			<td id="int_76" class="statLevelValue"></td>
+			<td id="int_77" class="statLevelValue"></td>
+			<td id="int_78" class="statLevelValue"></td>
+			<td id="int_79" class="statLevelValue"></td>
+			<td id="int_80" class="statLevelValue"></td>
+			<td id="int_81" class="statLevelValue"></td>
+			<td id="int_82" class="statLevelValue"></td>
+			<td id="int_83" class="statLevelValue"></td>
+			<td id="int_84" class="statLevelValue"></td>
+			<td id="int_85" class="statLevelValue"></td>
+			<td id="int_86" class="statLevelValue"></td>
+			<td id="int_87" class="statLevelValue"></td>
+			<td id="int_88" class="statLevelValue"></td>
+			<td id="int_89" class="statLevelValue"></td>
+			<td id="int_90" class="statLevelValue"></td>
+			<td id="int_91" class="statLevelValue"></td>
+			<td id="int_92" class="statLevelValue"></td>
+			<td id="int_93" class="statLevelValue"></td>
+			<td id="int_94" class="statLevelValue"></td>
+			<td id="int_95" class="statLevelValue"></td>
+			<td id="int_96" class="statLevelValue"></td>
+			<td id="int_97" class="statLevelValue"></td>
+			<td id="int_98" class="statLevelValue"></td>
+			<td id="int_99" class="statLevelValue"></td>
+			<td id="int_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader mentalStatHeader">
+				WIS
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="wis_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="wis_0" class="statLevelValue"></td>
+			<td id="wis_1" class="statLevelValue"></td>
+			<td id="wis_2" class="statLevelValue"></td>
+			<td id="wis_3" class="statLevelValue"></td>
+			<td id="wis_4" class="statLevelValue"></td>
+			<td id="wis_5" class="statLevelValue"></td>
+			<td id="wis_6" class="statLevelValue"></td>
+			<td id="wis_7" class="statLevelValue"></td>
+			<td id="wis_8" class="statLevelValue"></td>
+			<td id="wis_9" class="statLevelValue"></td>
+			<td id="wis_10" class="statLevelValue"></td>
+			<td id="wis_11" class="statLevelValue"></td>
+			<td id="wis_12" class="statLevelValue"></td>
+			<td id="wis_13" class="statLevelValue"></td>
+			<td id="wis_14" class="statLevelValue"></td>
+			<td id="wis_15" class="statLevelValue"></td>
+			<td id="wis_16" class="statLevelValue"></td>
+			<td id="wis_17" class="statLevelValue"></td>
+			<td id="wis_18" class="statLevelValue"></td>
+			<td id="wis_19" class="statLevelValue"></td>
+			<td id="wis_20" class="statLevelValue"></td>
+			<td id="wis_21" class="statLevelValue"></td>
+			<td id="wis_22" class="statLevelValue"></td>
+			<td id="wis_23" class="statLevelValue"></td>
+			<td id="wis_24" class="statLevelValue"></td>
+			<td id="wis_25" class="statLevelValue"></td>
+			<td id="wis_26" class="statLevelValue"></td>
+			<td id="wis_27" class="statLevelValue"></td>
+			<td id="wis_28" class="statLevelValue"></td>
+			<td id="wis_29" class="statLevelValue"></td>
+			<td id="wis_30" class="statLevelValue"></td>
+			<td id="wis_31" class="statLevelValue"></td>
+			<td id="wis_32" class="statLevelValue"></td>
+			<td id="wis_33" class="statLevelValue"></td>
+			<td id="wis_34" class="statLevelValue"></td>
+			<td id="wis_35" class="statLevelValue"></td>
+			<td id="wis_36" class="statLevelValue"></td>
+			<td id="wis_37" class="statLevelValue"></td>
+			<td id="wis_38" class="statLevelValue"></td>
+			<td id="wis_39" class="statLevelValue"></td>
+			<td id="wis_40" class="statLevelValue"></td>
+			<td id="wis_41" class="statLevelValue"></td>
+			<td id="wis_42" class="statLevelValue"></td>
+			<td id="wis_43" class="statLevelValue"></td>
+			<td id="wis_44" class="statLevelValue"></td>
+			<td id="wis_45" class="statLevelValue"></td>
+			<td id="wis_46" class="statLevelValue"></td>
+			<td id="wis_47" class="statLevelValue"></td>
+			<td id="wis_48" class="statLevelValue"></td>
+			<td id="wis_49" class="statLevelValue"></td>
+			<td id="wis_50" class="statLevelValue"></td>
+			<td id="wis_51" class="statLevelValue"></td>
+			<td id="wis_52" class="statLevelValue"></td>
+			<td id="wis_53" class="statLevelValue"></td>
+			<td id="wis_54" class="statLevelValue"></td>
+			<td id="wis_55" class="statLevelValue"></td>
+			<td id="wis_56" class="statLevelValue"></td>
+			<td id="wis_57" class="statLevelValue"></td>
+			<td id="wis_58" class="statLevelValue"></td>
+			<td id="wis_59" class="statLevelValue"></td>
+			<td id="wis_60" class="statLevelValue"></td>
+			<td id="wis_61" class="statLevelValue"></td>
+			<td id="wis_62" class="statLevelValue"></td>
+			<td id="wis_63" class="statLevelValue"></td>
+			<td id="wis_64" class="statLevelValue"></td>
+			<td id="wis_65" class="statLevelValue"></td>
+			<td id="wis_66" class="statLevelValue"></td>
+			<td id="wis_67" class="statLevelValue"></td>
+			<td id="wis_68" class="statLevelValue"></td>
+			<td id="wis_69" class="statLevelValue"></td>
+			<td id="wis_70" class="statLevelValue"></td>
+			<td id="wis_71" class="statLevelValue"></td>
+			<td id="wis_72" class="statLevelValue"></td>
+			<td id="wis_73" class="statLevelValue"></td>
+			<td id="wis_74" class="statLevelValue"></td>
+			<td id="wis_75" class="statLevelValue"></td>
+			<td id="wis_76" class="statLevelValue"></td>
+			<td id="wis_77" class="statLevelValue"></td>
+			<td id="wis_78" class="statLevelValue"></td>
+			<td id="wis_79" class="statLevelValue"></td>
+			<td id="wis_80" class="statLevelValue"></td>
+			<td id="wis_81" class="statLevelValue"></td>
+			<td id="wis_82" class="statLevelValue"></td>
+			<td id="wis_83" class="statLevelValue"></td>
+			<td id="wis_84" class="statLevelValue"></td>
+			<td id="wis_85" class="statLevelValue"></td>
+			<td id="wis_86" class="statLevelValue"></td>
+			<td id="wis_87" class="statLevelValue"></td>
+			<td id="wis_88" class="statLevelValue"></td>
+			<td id="wis_89" class="statLevelValue"></td>
+			<td id="wis_90" class="statLevelValue"></td>
+			<td id="wis_91" class="statLevelValue"></td>
+			<td id="wis_92" class="statLevelValue"></td>
+			<td id="wis_93" class="statLevelValue"></td>
+			<td id="wis_94" class="statLevelValue"></td>
+			<td id="wis_95" class="statLevelValue"></td>
+			<td id="wis_96" class="statLevelValue"></td>
+			<td id="wis_97" class="statLevelValue"></td>
+			<td id="wis_98" class="statLevelValue"></td>
+			<td id="wis_99" class="statLevelValue"></td>
+			<td id="wis_100" class="statLevelValue"></td>
+		</tr>
+		<tr>
+			<td class="statLevelValueRowHeader mentalStatHeader">
+				INF
+			</td>
+			<td>
+			</td>
+			<td>
+				<input size="4" type="text" id="inf_base" class="statLevelValueInput" />
+			</td>
+			<td>
+			</td>
+			<td id="inf_0" class="statLevelValue"></td>
+			<td id="inf_1" class="statLevelValue"></td>
+			<td id="inf_2" class="statLevelValue"></td>
+			<td id="inf_3" class="statLevelValue"></td>
+			<td id="inf_4" class="statLevelValue"></td>
+			<td id="inf_5" class="statLevelValue"></td>
+			<td id="inf_6" class="statLevelValue"></td>
+			<td id="inf_7" class="statLevelValue"></td>
+			<td id="inf_8" class="statLevelValue"></td>
+			<td id="inf_9" class="statLevelValue"></td>
+			<td id="inf_10" class="statLevelValue"></td>
+			<td id="inf_11" class="statLevelValue"></td>
+			<td id="inf_12" class="statLevelValue"></td>
+			<td id="inf_13" class="statLevelValue"></td>
+			<td id="inf_14" class="statLevelValue"></td>
+			<td id="inf_15" class="statLevelValue"></td>
+			<td id="inf_16" class="statLevelValue"></td>
+			<td id="inf_17" class="statLevelValue"></td>
+			<td id="inf_18" class="statLevelValue"></td>
+			<td id="inf_19" class="statLevelValue"></td>
+			<td id="inf_20" class="statLevelValue"></td>
+			<td id="inf_21" class="statLevelValue"></td>
+			<td id="inf_22" class="statLevelValue"></td>
+			<td id="inf_23" class="statLevelValue"></td>
+			<td id="inf_24" class="statLevelValue"></td>
+			<td id="inf_25" class="statLevelValue"></td>
+			<td id="inf_26" class="statLevelValue"></td>
+			<td id="inf_27" class="statLevelValue"></td>
+			<td id="inf_28" class="statLevelValue"></td>
+			<td id="inf_29" class="statLevelValue"></td>
+			<td id="inf_30" class="statLevelValue"></td>
+			<td id="inf_31" class="statLevelValue"></td>
+			<td id="inf_32" class="statLevelValue"></td>
+			<td id="inf_33" class="statLevelValue"></td>
+			<td id="inf_34" class="statLevelValue"></td>
+			<td id="inf_35" class="statLevelValue"></td>
+			<td id="inf_36" class="statLevelValue"></td>
+			<td id="inf_37" class="statLevelValue"></td>
+			<td id="inf_38" class="statLevelValue"></td>
+			<td id="inf_39" class="statLevelValue"></td>
+			<td id="inf_40" class="statLevelValue"></td>
+			<td id="inf_41" class="statLevelValue"></td>
+			<td id="inf_42" class="statLevelValue"></td>
+			<td id="inf_43" class="statLevelValue"></td>
+			<td id="inf_44" class="statLevelValue"></td>
+			<td id="inf_45" class="statLevelValue"></td>
+			<td id="inf_46" class="statLevelValue"></td>
+			<td id="inf_47" class="statLevelValue"></td>
+			<td id="inf_48" class="statLevelValue"></td>
+			<td id="inf_49" class="statLevelValue"></td>
+			<td id="inf_50" class="statLevelValue"></td>
+			<td id="inf_51" class="statLevelValue"></td>
+			<td id="inf_52" class="statLevelValue"></td>
+			<td id="inf_53" class="statLevelValue"></td>
+			<td id="inf_54" class="statLevelValue"></td>
+			<td id="inf_55" class="statLevelValue"></td>
+			<td id="inf_56" class="statLevelValue"></td>
+			<td id="inf_57" class="statLevelValue"></td>
+			<td id="inf_58" class="statLevelValue"></td>
+			<td id="inf_59" class="statLevelValue"></td>
+			<td id="inf_60" class="statLevelValue"></td>
+			<td id="inf_61" class="statLevelValue"></td>
+			<td id="inf_62" class="statLevelValue"></td>
+			<td id="inf_63" class="statLevelValue"></td>
+			<td id="inf_64" class="statLevelValue"></td>
+			<td id="inf_65" class="statLevelValue"></td>
+			<td id="inf_66" class="statLevelValue"></td>
+			<td id="inf_67" class="statLevelValue"></td>
+			<td id="inf_68" class="statLevelValue"></td>
+			<td id="inf_69" class="statLevelValue"></td>
+			<td id="inf_70" class="statLevelValue"></td>
+			<td id="inf_71" class="statLevelValue"></td>
+			<td id="inf_72" class="statLevelValue"></td>
+			<td id="inf_73" class="statLevelValue"></td>
+			<td id="inf_74" class="statLevelValue"></td>
+			<td id="inf_75" class="statLevelValue"></td>
+			<td id="inf_76" class="statLevelValue"></td>
+			<td id="inf_77" class="statLevelValue"></td>
+			<td id="inf_78" class="statLevelValue"></td>
+			<td id="inf_79" class="statLevelValue"></td>
+			<td id="inf_80" class="statLevelValue"></td>
+			<td id="inf_81" class="statLevelValue"></td>
+			<td id="inf_82" class="statLevelValue"></td>
+			<td id="inf_83" class="statLevelValue"></td>
+			<td id="inf_84" class="statLevelValue"></td>
+			<td id="inf_85" class="statLevelValue"></td>
+			<td id="inf_86" class="statLevelValue"></td>
+			<td id="inf_87" class="statLevelValue"></td>
+			<td id="inf_88" class="statLevelValue"></td>
+			<td id="inf_89" class="statLevelValue"></td>
+			<td id="inf_90" class="statLevelValue"></td>
+			<td id="inf_91" class="statLevelValue"></td>
+			<td id="inf_92" class="statLevelValue"></td>
+			<td id="inf_93" class="statLevelValue"></td>
+			<td id="inf_94" class="statLevelValue"></td>
+			<td id="inf_95" class="statLevelValue"></td>
+			<td id="inf_96" class="statLevelValue"></td>
+			<td id="inf_97" class="statLevelValue"></td>
+			<td id="inf_98" class="statLevelValue"></td>
+			<td id="inf_99" class="statLevelValue"></td>
+			<td id="inf_100" class="statLevelValue"></td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
