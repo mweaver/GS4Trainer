@@ -1,7 +1,7 @@
 var GS4Trainer = (function () {
 
     return {
-        stats:{
+        stats: {
             getAllLevelStats: function (levelZeroValue, growthRate) {
 
                 var stats = [],
@@ -28,6 +28,9 @@ var GS4Trainer = (function () {
 
                 return stats;
             }
+        },
+        create: function() {
+            return {};
         }
     };
 
