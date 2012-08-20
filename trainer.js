@@ -2,23 +2,9 @@
     $(document).ready(function() {
 
         // Constants...put somewhere else later
-        var Stats = {
-            Strength: 0,
-            Constitution: 1,
-            Dexterity: 2,
-            Agility: 3,
-            Discipline: 4,
-            Aura: 5,
-            Logic: 6,
-            Intuition: 7,
-            Wisdom: 8,
-            Influence: 9
-        };
 
         var Professions = {
-            Bard: {
-                strengthGrowthRate: 1
-            },
+            Bard: 0,
             Cleric: 1,
             Empath: 2,
             Monk: 3,

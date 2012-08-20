@@ -1,5 +1,4 @@
-var GS4Trainer = (function () {
-
+(function (GS4Trainer, $, undefined) {
     return {
         stats: {
             getAllLevelStats: function (levelZeroValue, growthRate) {
@@ -30,8 +29,22 @@ var GS4Trainer = (function () {
             }
         },
         create: function() {
-            return {};
+            var Stats = {
+                Strength: 0,
+                Constitution: 1,
+                Dexterity: 2,
+                Agility: 3,
+                Discipline: 4,
+                Aura: 5,
+                Logic: 6,
+                Intuition: 7,
+                Wisdom: 8,
+                Influence: 9
+            };
+
+            $.each(Stats, function(key, value) {
+                console.log(key);
+            });
         }
     };
-
-})();
+} (window.GS4Trainer = window.GS4Trainer || {}, jQuery));
