@@ -1,50 +1,53 @@
 (function (GS4Trainer, $, undefined) {
-    return {
-        stats: {
-            getAllLevelStats: function (levelZeroValue, growthRate) {
 
-                var stats = [],
-                    currentStatValue = levelZeroValue;
+    var getAllLevelStats = function (levelZeroValue, growthRate) {
 
-                for (var level = 0; level <= 100; level++)
-                {
-                    if (level === 0)
-                    {
-                        stats.push(currentStatValue);
-                        continue;
-                    }
+        var stats = [],
+            currentStatValue = levelZeroValue;
 
-                    var growthInterval = Math.floor(currentStatValue / growthRate);
-                    if (growthInterval < 1) { growthInterval = 1; }
-
-                    if (level % growthInterval === 0)
-                    {
-                        currentStatValue += 1;
-                    }
-
-                    stats.push(currentStatValue);
-                }
-
-                return stats;
+        for (var level = 0; level <= 100; level++)
+        {
+            if (level === 0)
+            {
+                stats.push(currentStatValue);
+                continue;
             }
-        },
-        create: function() {
-            var Stats = {
-                Strength: 0,
-                Constitution: 1,
-                Dexterity: 2,
-                Agility: 3,
-                Discipline: 4,
-                Aura: 5,
-                Logic: 6,
-                Intuition: 7,
-                Wisdom: 8,
-                Influence: 9
-            };
 
-            $.each(Stats, function(key, value) {
-                console.log(key);
-            });
+            var growthInterval = Math.floor(currentStatValue / growthRate);
+            if (growthInterval < 1) { growthInterval = 1; }
+
+            if (level % growthInterval === 0)
+            {
+                currentStatValue += 1;
+            }
+
+            stats.push(currentStatValue);
         }
+
+        return stats;
     };
-} (window.GS4Trainer = window.GS4Trainer || {}, jQuery));
+    GS4Trainer.getAllLevelStats = getAllLevelStats;
+
+    var create =  function() {
+        var Stats = {
+            Strength: 0,
+            Constitution: 1,
+            Dexterity: 2,
+            Agility: 3,
+            Discipline: 4,
+            Aura: 5,
+            Logic: 6,
+            Intuition: 7,
+            Wisdom: 8,
+            Influence: 9
+        };
+
+        $.each(Stats, function(key, value) {
+            console.log(key);
+        });
+
+        return {};
+    };
+    GS4Trainer.create = create;
+
+} (window.GS4Trainer = window.GS4Trainer || {}, $));
