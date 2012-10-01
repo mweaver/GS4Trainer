@@ -27,5 +27,5 @@ test('Level 0 Stat = 50; Growth Rate is 10', function() {
 test('Can create new trainer object', function() {
     var trainer = GS4Trainer.create();
 
-    notEqual(trainer, undefined, 'Cannot create "trainer" object');
+    notEqual(trainer, undefined);
 });

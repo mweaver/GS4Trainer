@@ -40,13 +40,22 @@
             Intuition: 7,
             Wisdom: 8,
             Influence: 9
-        };
+            },
+            that = {};
 
         $.each(Stats, function(key, value) {
-            console.log(key);
+            that[key] = [];
+
+            for (var x = 0; x <= 100; x++)
+            {
+                that[key][x] = 0;
+            }
+
         });
 
-        return {};
+        console.log(that);
+
+        return that;
     };
     GS4Trainer.create = create;
 
